@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .overflow{
+            width: 100px;
+            height: 300px;
+            overflow: scroll;
+            /* overflow-x: hidden; */
+        }
+        .ellipis p{
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .container{
+            text-align: center;
+        }
+
+        .parent{
+            width: 200px;
+            height: 200px;
+            background-color: #561010;
+            margin-bottom: 20px;
+            
+        }
+        .child1,.child2,.child3,.child4{
+            width: 200px;
+            height: 200px;
+            background-color: #3a1298;
+            
+        }
+        .child1{
+            transform: scale(.5) translateX(50%) rotate(45deg);
+        }
+        .child2{
+            transform: scale(.5) translatey(50%) rotate(45deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="overflow">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas consectetur totam placeat ad tempore! Accusamus libero, dicta doloribus, quae odio beatae vitae dolor incidunt voluptate facere porro adipisci delectus aperiam?</p>
+    </div>
+    <div title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel neque delectus adipisci dolorem enim repudiandae? Exercitationem, numquam. Dolores, officia?" class="ellipis">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel neque delectus adipisci dolorem enim repudiandae? Exercitationem, numquam. Dolores, officia?</p>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="parent">
+            <div class="child1"></div>
+            <div class="child2"></div>
+            <div class="child3"></div>
+            <div class="child4"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener
+    </title>
+</head>
+
+<body>
+    <h1 id="changeableText">This is Changeable</h1>
+    <button onclick="changeable()">Changed</button>
+    <button id="changed2">Changed2</button>
+    <br><br>
+    <p id="comment">This is a comment</p>
+    <input type="text" id="commentedText">
+    <button id="submit">sumbit</button>
+    <script>
+        const changeableText = document.getElementById('changeableText');
+        function changeable() {
+            changeableText.innerText = 'Text Changed'
+        }
+        const changed2=document.getElementById('changed2')
+        changed2.addEventListener('click',function(){
+            changeableText.innerText='Changed by addeventlistener';
+        })
+
+        document.getElementById('submit').addEventListener('click',function(){
+            const commentField=document.getElementById('commentedText')
+            let addComment=commentField.value;
+            document.getElementById('comment').innerText=addComment;
+            console.log(addComment);
+            commentField.value=''
+
+        })
+
+    </script>
+</body>
+
+</html>

@@ -23,5 +23,15 @@ for(item in jalilInfo){
     console.log(item);
 }
 
+let studentInfo = {
+    name : 'Sakib',
+    age : 23,
+    sub : 'Math'
+}
+const keys = Object.keys(studentInfo);
+console.log(keys);
+const values = Object.values(studentInfo);
+console.log(values);
+
 
 
